@@ -54,5 +54,8 @@
         margin-left: 20px;
         margin-right: 30px;
     }
+    .details-image{
+        height: 200px;
+    }
 </style>
 </html>
