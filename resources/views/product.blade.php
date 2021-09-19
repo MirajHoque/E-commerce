@@ -2,6 +2,8 @@
 @section("content")
 <div class="custom-product">
 
+  <!--add carousel-->
+
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-ride="2000">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -34,6 +36,26 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+      </div>
+      <!--end carousel-->
+
+      <!--add some product-->
+
+      <div class="trending-wrapper">
+        <h3>Trending Products</h3>
+        @foreach ($products as $element)
+
+        <div class="trending-item">
+          <img class="trending-image" src="{{ $element['gallery']}}" alt="">
+          
+          <div class="trending-text">
+              <h3>{{ $element['name'] }}</h3>
+          </div>
+
+      </div>
+
+      @endforeach
+
       </div>
     
 </div>
