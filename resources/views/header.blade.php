@@ -43,7 +43,7 @@
     </form>
 
     <ul class="navbar-nav">
-      <li class=" mr-3 nav-item"><a href="#">cart({{ $total }})</a></li>
+      <li class=" mr-3 nav-item"><a href="/cartlist">cart({{ $total }})</a></li>
 
       <!-- log in dropdown--->
 
