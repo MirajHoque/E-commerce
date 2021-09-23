@@ -57,10 +57,20 @@
     .details-image{
         height: 200px;
     }
+    .col-md-6 > .details-image{
+        height: 125px;
+        width: 200px;
+    }
     .cart-list-divider{
         border-bottom: 1px solid #ccc;
         margin-bottom: 20px;
         padding-bottom: 20px;
     }
+
+    .cart-image{
+        height: 100px;
+        width: 180px;
+    }
+
 </style>
 </html>
