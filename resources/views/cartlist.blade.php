@@ -5,6 +5,8 @@
 
          <div class="trending-wrapper">
              <h4 class="mb-4">Results for products</h4>
+             <a href="/ordernow" class="btn btn-success">Order Now</a>
+             <br><br>
 
              @foreach ($products as $element)
              <div class="row searched-item cart-list-divider">
@@ -30,6 +32,10 @@
                  
              @endforeach
          </div>
+
+         <a href="/ordernow" class="btn btn-success">Order Now</a>
+             <br><br>
+             
 </div>
 
 
