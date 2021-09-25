@@ -36,17 +36,18 @@
 
       <div class="mt-4">
         
-          <form action="/action_page.php">
+          <form action="/placedorder" method="POST">
+            @csrf
             <div class="form-group">
-              <textarea type="email" class="form-control" name="" placeholder="Enter your address"></textarea>
+              <textarea  class="form-control" name="address" placeholder="Enter your address" required></textarea>
             </div>
             <div class="form-group">
               <label for="pwd">Payment Method</label> <br> <br>
-              <input type="radio" name="payment"> <span>Online Payment</span> <br> <br>
-              <input type="radio" name="payment"> <span>EMI Payment</span> <br> <br>
-              <input type="radio" name="payment"> <span>Payment on Delivery</span> <br> <br>
+              <input type="radio" class=" ml-3 " value="cash" name="payment" required> <span>Online Payment</span> <br> <br>
+              <input type="radio" class=" ml-3 " value="cash" name="payment" required> <span>EMI Payment</span> <br> <br>
+              <input type="radio" class="ml-3" value="cash"name="payment" required> <span>Payment on Delivery</span> <br> <br>
             </div>
-            <button type="submit" class="btn btn-default">Order Now</button>
+            <button type="submit" class="btn ml-3 btn-success">Placed Order</button>
           </form>
       </div>
 
