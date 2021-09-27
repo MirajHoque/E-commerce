@@ -32,7 +32,7 @@
     
     <ul class="navbar-nav">
       <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-      <li class="nav-item"><a class="nav-link orders" href="#">Oders</a></li>
+      <li class="nav-item"><a class="nav-link orders" href="/myorders">Oders</a></li>
     </ul>
 
     <form action="/search" class="form-inline navbar-form navbar-left">

@@ -35,8 +35,10 @@
 
          <a href="/ordernow" class="btn btn-success">Order Now</a>
              <br><br>
+
+
+@endsection
              
 </div>
 
 
-@endsection
