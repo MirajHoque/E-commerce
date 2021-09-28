@@ -22,7 +22,7 @@
 </style>
 
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
-  <a class="nav-link" href="/">E-Commerce</a>
+  <a class="nav-link font-weight-bold" href="/">CartEye</a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
     </form>
 
     <ul class="navbar-nav">
-      <li class=" mr-3 nav-item"><a href="/cartlist">cart({{ $total }})</a></li>
+      <li class=" mr-2 nav-item"><a href="/cartlist">cart({{ $total }})</a></li>
 
       <!-- log in dropdown--->
 
@@ -62,7 +62,7 @@
       </div>
 
     @else
-    <a href="/login">Log In</a>
+    <a href="/login">SIGNUP/LOGIN</a>
     
     @endif
     </ul>

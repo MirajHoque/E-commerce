@@ -4,8 +4,12 @@
 <div class="custom-product">
 
          <div class="trending-wrapper">
-             <h4 class="mb-4">Results for products</h4>
-             <a href="/ordernow" class="btn btn-success">Order Now</a>
+            <div class="d-inline">
+                <h4 class=" pr-5 mr-5">Results for products</h4>
+                <h4 class=" pl-5 ml-5 text-right">
+                   <a href="/ordernow" class="btn btn-success">Order Now</a>
+                </h4>
+            </div>
              <br><br>
 
              @foreach ($products as $element)
@@ -33,8 +37,6 @@
              @endforeach
          </div>
 
-         <a href="/ordernow" class="btn btn-success">Order Now</a>
-             <br><br>
 
 
 @endsection
