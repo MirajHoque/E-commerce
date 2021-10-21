@@ -38,8 +38,9 @@
     <form action="/search" class="form-inline navbar-form navbar-left">
       <div class="form-group">
         <input type="text" name="query" class="form-control mr-sm-2 search-box" placeholder="Search">
+        <button type="submit" class="btn btn-outline-success search">Search</button>
       </div>      
-      <button type="submit" class="btn btn-outline-success search">Search</button>
+      
     </form>
 
     <ul class="navbar-nav">
