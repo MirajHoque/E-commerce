@@ -1,5 +1,9 @@
 @extends('master')
 @section("content")
+
+<div>
+  
+</div>
 <div class="custom-product">
 
   <!--add carousel-->
