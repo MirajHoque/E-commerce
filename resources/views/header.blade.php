@@ -1,9 +1,10 @@
 <?php
   use App\Http\Controllers\ProductController;
+  use App\Http\Controllers\CartController;
 
   $total = 0;
   if(Session::has('user')){
-    $total = ProductController::cartItem();
+    $total = CartController::cartItem();
   }
   
 
@@ -44,23 +45,20 @@
     </form>
 
     <ul class="navbar-nav">
-      <li class=" mr-2 nav-item"><a href="/cartlist">cart({{ $total }})</a></li>
+      <li class="mr-2 nav-item">
+        <span><i class="fas fa-cart-arrow-down"></i></span>
+      </li>
+      <li class="mr-2 nav-item">
+        <a href="/cartlist">cart({{ $total }})</a>
+      </li>
 
-      <!-- log in dropdown--->
+      <!-- log in & log out --->
 
       @if(Session::has('user'))
-          
-        
-      <div>
-        <li class="dropdown">
-          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            {{ Session::get('user')['name'] }}
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/logout">Log Out</a>
-          </div>
-         </li>
-      </div>
+       <div>
+         <Span class="mr-1">{{ Session::get('user')['name'] }}</Span>
+         <a href="/logout"><i class="fas fa-sign-out-alt"></i></a>
+       </div>
 
     @else
     <a href="/login">SIGNUP/LOGIN</a>
